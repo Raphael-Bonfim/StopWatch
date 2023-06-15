@@ -7,8 +7,6 @@ class Program
         Menu();
     }
 
-
-    
     static void Menu()
     {
         Console.Clear();
@@ -19,7 +17,7 @@ class Program
 
         string data = Console.ReadLine()!.ToLower();
         char type = char.Parse(data.Substring(data.Length - 1, 1));
-        int time = int.Parse(data.Substring(0, data.Length - 1));
+        int time = int.Parse(data.Substring(0, data.Length - 1));da
         int multiplier = 1;
 
         if (type == 'm')
@@ -63,16 +61,7 @@ class Program
         }
 
         Console.Clear();
-        Console.WriteLine("StopWatch finished.");
+        Console.WriteLine("Stopwatch finished.");
         Thread.Sleep(2500);
-    }
-
-    static void ExibirTituloDaOpcao(string data)
-    {
-        int quantidadeDeLetras = data.Length;
-        string traco = string.Empty.PadLeft(quantidadeDeLetras, '-');
-        Console.WriteLine(traco);
-        Console.WriteLine(data);
-        Console.WriteLine(traco + "\n");
     }
 }
